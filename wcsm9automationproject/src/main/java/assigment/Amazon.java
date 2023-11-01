@@ -48,6 +48,7 @@ public class Amazon {
 	    		driver.findElement(By.xpath("//input[@id='add-to-cart-button']")).click();
 	    		Thread.sleep(2000);
 	    		driver.findElement(By.xpath("//a[@id='nav-logo-sprites']")).click();
+	    		Thread.sleep(2000);
 	    		driver.findElement(By.xpath("//span[@id='nav-cart-count']")).click();
 	    		driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']")).click();
 	    	}
