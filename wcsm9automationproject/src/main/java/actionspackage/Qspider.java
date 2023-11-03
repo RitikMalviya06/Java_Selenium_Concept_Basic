@@ -16,7 +16,7 @@ public class Qspider {
 		driver.findElement(By.xpath("//button[text()='Yes']")).click();
 		driver.findElement(By.xpath("//a[text()='Right Click']")).click();
 		
-		driver.findElement(By.xpath(null))
+		//driver.findElement(By.xpath(null))
 		
 		
 		
