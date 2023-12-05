@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  
+		  <define name="Regreesion testing "> 
+			  
+			  <include name="Functional test case"></include>
+			  <include name="Integration test case"></include>
+			  <include name="smoke test case"></include>      
+		  
+		  </define>
+		  <run>
+			  <include name="Functional test case"></include>
+			  <exclude name="Integration test case"></exclude>
+			  <include name="smoke test case"></include>
+			  
+			  
+		  </run> 
+		  
+	  </groups>
+    <classes>
+      <class name="testNGAnnotations.Flag6"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -52,9 +52,9 @@ public class LoginPages {
 	// operational metnods 
 	public void validLogin(String validusn,String validpass)
 	{
-		usnTB.sendKeys(validusn);
-		passTB.sendKeys(validpass);
-		loginbutton.click();
+		getUsnTB().sendKeys(validusn);
+		getPassTB().sendKeys(validpass);
+		getLoginbutton().click();
 	}
 	public void invalidLogin(String invalidusn,String invalidpass)
 	{

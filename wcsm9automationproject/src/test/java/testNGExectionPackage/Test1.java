@@ -11,10 +11,7 @@ public class Test1 {
   }
   @Test
   public void method2() {
-	 // Reporter.log("method 1 from test 1 class ", true);
-	  int a=5;
-	  int b=4;
-	  int rec:
+	  Reporter.log("method 1 from test 1 class ", true);
 	  
 	 }
 }

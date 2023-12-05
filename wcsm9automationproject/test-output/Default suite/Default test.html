@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 29 21:30:15 IST 2023</td>
+<td>Started on:</td><td>Mon Dec 04 12:47:23 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (712 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (134 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testNGExectionPackage.SelectTest.SelectTestMethod()'><b>SelectTestMethod</b><br>Test class: testNGExectionPackage.SelectTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by @Test on method SelectTestMethod but has not been marked @Optional or defined
-in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+<td title='testNGAnnotations.Flag7.method2()'><b>method2</b><br>Test class: testNGAnnotations.Flag7<br>Test method: it is use to pefrom  create user</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testNGAnnotations.Flag7.method2(Flag7.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -107,18 +109,20 @@ in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xm
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1293677337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1293677337'><pre>org.testng.TestNGException: 
-Parameter &apos;Browser&apos; is required by @Test on method SelectTestMethod but has not been marked @Optional or defined
-in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1147805316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1147805316'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testNGAnnotations.Flag7.method2(Flag7.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -140,7 +144,40 @@ in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xm
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>testNGExectionPackage.SelectTest@67f639d3</td></tr>
+<td>testNGAnnotations.Flag7@ffaa6af</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGAnnotations.Flag7.method3()'><b>method3</b><br>Test class: testNGAnnotations.Flag7<br>Test method: it is use to pefrom logout<br/>
+<a href="#Output-1326393666" onClick='toggleBox("Output-1326393666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1326393666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1326393666">
+method 3 for logout page<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGAnnotations.Flag7@ffaa6af</td></tr>
+<tr>
+<td title='testNGAnnotations.Flag7.method1()'><b>method1</b><br>Test class: testNGAnnotations.Flag7<br>Test method: it is use to pefrom login <br/>
+<a href="#Output-441001942" onClick='toggleBox("Output-441001942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-441001942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-441001942">
+method 1 for login <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>testNGAnnotations.Flag7@ffaa6af</td></tr>
 </table><p>
 </body>
 </html>

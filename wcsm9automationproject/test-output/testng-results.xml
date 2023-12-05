@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[method 1 for login ]]>
+    </line>
+    <line>
+      <![CDATA[method 3 for logout page]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-11-29T21:30:15 IST" name="Default suite" finished-at="2023-11-29T21:30:16 IST" duration-ms="712">
+  <suite started-at="2023-12-04T12:47:23 IST" name="Default suite" finished-at="2023-12-04T12:47:23 IST" duration-ms="134">
     <groups>
     </groups>
-    <test started-at="2023-11-29T21:30:15 IST" name="Default test" finished-at="2023-11-29T21:30:16 IST" duration-ms="712">
-      <class name="testNGExectionPackage.SelectTest">
-        <test-method signature="SelectTestMethod(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testNGExectionPackage.SelectTest@67f639d3]" started-at="2023-11-29T21:30:16 IST" name="SelectTestMethod" finished-at="2023-11-29T21:30:16 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+    <test started-at="2023-12-04T12:47:23 IST" name="Default test" finished-at="2023-12-04T12:47:23 IST" duration-ms="134">
+      <class name="testNGAnnotations.Flag7">
+        <test-method signature="method1()[pri:0, instance:testNGAnnotations.Flag7@ffaa6af]" started-at="2023-12-04T12:47:23 IST" name="method1" description="it is use to pefrom login " finished-at="2023-12-04T12:47:23 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[method 1 for login ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+        <test-method signature="method2()[pri:0, instance:testNGAnnotations.Flag7@ffaa6af]" started-at="2023-12-04T12:47:23 IST" name="method2" description="it is use to pefrom  create user" finished-at="2023-12-04T12:47:23 IST" depends-on-methods="testNGAnnotations.Flag7.method1" duration-ms="6" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Parameter 'Browser' is required by @Test on method SelectTestMethod but has not been marked @Optional or defined
-in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xml]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'Browser' is required by @Test on method SelectTestMethod but has not been marked @Optional or defined
-in C:\Users\hp\AppData\Local\Temp\testng-eclipse-499449232\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at testNGAnnotations.Flag7.method2(Flag7.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -47,11 +60,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SelectTestMethod -->
-      </class> <!-- testNGExectionPackage.SelectTest -->
+        </test-method> <!-- method2 -->
+        <test-method signature="method3()[pri:0, instance:testNGAnnotations.Flag7@ffaa6af]" started-at="2023-12-04T12:47:23 IST" name="method3" description="it is use to pefrom logout" finished-at="2023-12-04T12:47:23 IST" depends-on-methods="testNGAnnotations.Flag7.method2" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[method 3 for logout page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- method3 -->
+      </class> <!-- testNGAnnotations.Flag7 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

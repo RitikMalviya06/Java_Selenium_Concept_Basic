@@ -13,6 +13,8 @@ import keyWordDriverFramework.IautoConstant;
 
 public class BaseTest extends Flib implements IautoConstant{
 	static WebDriver driver;
+	
+	
 	public void setUp() throws IOException {
 		Flib flib= new Flib();
 		 String browservalue = flib.readDataFromProperty(PROP_PATH,"Browser");
@@ -39,9 +41,9 @@ public class BaseTest extends Flib implements IautoConstant{
 	}
        public void tearDown()
        {
-             //driver.quit();
+             driver.quit();
     	   
-}
+       }
 }
 
 
