@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActTimeEndToEnd {
 	public static void main(String[] args) throws InterruptedException {
@@ -184,8 +187,10 @@ public class ActTimeEndToEnd {
 		driver.findElement(By.xpath("//input[@value='Insert Selected Tasks to the Enter Time-Track Page']")).click();*/
 		driver.findElement(By.xpath("(//input[@name='selected_11'])[3]")).click();
 		
+		// explicit wait 
 		
-		
+		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		// wait.until(ExpectedConditions.elementToBeClickable(By.id("loginButton")));    // expectedconditions is a class not interface
 		
 		
 		
